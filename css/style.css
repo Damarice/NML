@@ -882,6 +882,24 @@
 }
 /*** Testimonial End ***/
 
+.service-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Adjust as needed */
+    object-fit: cover; /* Ensure image covers the card area without distortion */
+    margin-bottom: 1rem; /* Space between image and text */
+}
+
+.service-card p {
+    font-size: 1rem;
+}
+
+
 /*** FAQ'S Start ***/
 .faq {
     position: relative;
