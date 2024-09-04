@@ -1,0 +1,78 @@
+/* Override Bootstrap primary and secondary colors */
+:root {
+    --primary: #003152; /* Parliament Blue */
+    --secondary: #FFD700; /* Gold */
+}
+
+/* For Bootstrap 5 and later versions */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary) !important;
+}
+
+/* Custom colors for footer and services */
+.footer-item-post p,
+.copyright span,
+.copyright .text-body,
+.copyright a,
+.text-muted {
+    color: #6c757d !important; /* Custom color for text and icons */
+}
+
+/* Ensure icons have the same color */
+.text-muted i {
+    color: #6c757d !important; /* Custom color for icons */
+}
+
+/* If icons inside links should have the same color */
+.text-muted i {
+    color: #6c757d !important; /* Custom color for icons within .text-muted */
+}
+
+/* Ensure images in service cards have fixed dimensions */
+.service-card img {
+    width: 300px !important; /* Set a fixed width */
+    height: 200px !important; /* Set a fixed height */
+    object-fit: cover !important; /* Ensure the image covers the area without distortion */
+    display: block !important; /* Remove any extra spacing */
+    margin: 0 auto !important; /* Center the image horizontally */
+}
+
+/* Style for service images to ensure they fit into the card */
+.service-img {
+    width: 150px; /* Fixed width for square shape */
+    height: 150px; /* Fixed height for square shape */
+    overflow: hidden; /* Hide overflow to ensure images don't spill out */
+    display: flex; /* Center the image within the container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0 auto; /* Center the image container horizontally */
+}
+
+.service-img img {
+    width: 100%; /* Make the image fill the container width */
+    height: 100%; /* Make the image fill the container height */
+    object-fit: cover; /* Cover the container without distortion */
+    border-radius: 0; /* Ensure no rounded corners */
+}
